@@ -35,6 +35,7 @@ body.wrong {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 5px;
+    font-size: 52px;
 }
 
 .btn-grid {
@@ -49,8 +50,39 @@ body.wrong {
     border: 2px dashed goldenrod;
     background-color: royalblue;
     border-radius: 5px;
-    padding: 8px 10px;
+    padding: 4px 5px;
     color: goldenrod;
     outline: none;
     font-size: 35px;
+}
+
+.btn:hover {
+    color: indigo;
+    background-color: hotpink;
+}
+
+.btn.correct {
+    background-color: var(--correct-color);
+    color: lime;
+}
+
+.btn.wrong {
+    background-color: var(--wrong-color);
+    color: white;
+}
+
+.begin-btn, .next-btn {
+    font-size: 58px;
+    font-weight: bolder;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
 }
