@@ -1,0 +1,56 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+:root {
+    --neutral-color: royalblue;
+    --wrong-color: crimson;
+    --correct-color: green;
+}
+
+body{
+    color: var(--neutral-color);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+
+body.correct {
+    background-color: var(--correct-color);
+}
+
+body.wrong {
+    background-color: var(--wrong-color);
+}
+
+.hub {
+    width: 800px;
+    max-width: 80%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 5px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    color: var(--neutral-color);
+    border: 2px dashed goldenrod;
+    background-color: royalblue;
+    border-radius: 5px;
+    padding: 8px 10px;
+    color: goldenrod;
+    outline: none;
+    font-size: 35px;
+}
