@@ -14,9 +14,6 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: goldenrod;
 }
 
@@ -29,13 +26,15 @@ body.wrong {
 }
 
 .hub {
-    width: 800px;
-    max-width: 80%;
+    width: 50%;
     background-color: whitesmoke;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 5px;
     font-size: 52px;
+    align-items: center;
+    
+
 }
 
 .btn-grid {
@@ -54,11 +53,15 @@ body.wrong {
     color: goldenrod;
     outline: none;
     font-size: 35px;
+    justify-content: center;
 }
 
 .btn:hover {
     color: indigo;
     background-color: hotpink;
+    cursor: pointer;
+    transform: scale(1.02);
+    transform: 100ms;
 }
 
 .btn.correct {
@@ -85,4 +88,36 @@ body.wrong {
 
 .hide {
     display: none;
+}
+
+/*Progress Bar and Score*/
+
+#status {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.status-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.status-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid var(--neutral-color);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: var(--neutral-color);
+    width: 0%;
 }
