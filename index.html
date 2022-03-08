@@ -5,15 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link href="The_Quizzle/assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
 </head>
+    <header>
+        <h1>
+            <a href="/" id="home">THE QUIZZLE</a>
+        </h1>
+    <nav>
+    <!-- Unordered list element-->
+     <ul>
+        <!-- List item element-->
+        <li>
+            <!-- Anchor element-->
+            <a href="#game-start" id="game-start-btn" class="btn">Begin</a>
+        </li>
+        <li>
+            <a href=#high-scores id="highscore-btn" class="btn">High Scores 🏆</a>
+        </li>
+     </ul>
+    </nav>
+</header>
+    <section class="hero">
+            Are you ready punk?
+            <video class="tab" width="1000" height="920" autoplay loop>            
+                <source src="./assets/images/video.mov"/>
+              </video>
+    </section>
 <body>
-    <div class='hub'>
-        <div id="home" class="flex-column flex-center">
-            <h1>Ready Punk?</h1>
-            <a href="The_Quizzle/game.html" class="btn">Begin</a>
-            <a href="The_Quizzle/highscores.html" id="highscore-btn" class="btn">High Scores 🏆</a>
+    <section id="game-start" class="justify-center flex-column">
+            <div class="container">
+                <div id="game-start" class="justify-center flex-column">
+                    <div id="hud">
+                        <div class="hud-progress">
+                            <p id="progressText" class="hud-prefix">
+                                Question
+                            </p>
+                            <div id="progress">
+                                <div id="progressFull"></div>
+                            </div>
+                        </div>
+                        <div class="hud-item">
+                            <p class="hud-prefix">
+                                Score
+                            </p>
+                            <h1 class="hud-main-text" id="score">
+                                0
+                            </h1>
+                        </div>
+                    </div>
+                    <h1 id="question">What is the answer to this question</h1>
+                    <div class="choice-container">
+                        <p class="choice prefix">A</p>
+                        <p class="choice-text" data-number="1">Choice 1</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice prefix">B</p>
+                        <p class="choice-text" data-number="2">Choice 2</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice prefix">C</p>
+                        <p class="choice-text" data-number="3">Choice 3</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice prefix">D</p>
+                        <p class="choice-text" data-number="4">Choice 4</p>
+                    </div>
+                </div>
+            </div>
+        <script src="./assets/js/game.js"></script>
+    </section>
+    <section>
+        <div class="container">
+            <div id="end" class="flex-center flex-column">
+                <h1 id="finalScore">0</h1>
+                <form class="end-form-container">
+                    <h2 id="end-text">Enter your name below to save your score!</h2>
+                    <input type="text" name="name" id="username" placeholder="Enter your name">
+                    <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+                </form>
+                <a href="game-start" class="btn">Play Again?</a>
+                <a href="/" class="btn">Go Home 🏡</a>
+            </div>
         </div>
-    </div>
+        <script src="./assets/js/end.js"></script>    
+    </section>
+    <section class="drum-roll">
+        How did you fared?
+    </section>
+        <footer id="high-scores"> 
+            <h1>🏆High Scores 🏆</h1>
+            <div class="container">
+                <div id="highScores" class="flex-center flex-column">
+                    <h1 id="finalScores">Top Dogs</h1>
+                    <ul id="highScoresList"></ul>
+                    <a href="/" class="btn">Back Home 🏡</a>
+                </div>
+            </div>
+            <Script: src="./assets/js/highscores.js"></Script>
+        </footer>
 </body>
 </html>
