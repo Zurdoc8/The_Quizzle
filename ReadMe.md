@@ -29,6 +29,13 @@ This project was created to display the use of different API's to get a project 
 
 ## Website
 
+ https://zurdoc8.github.io/The_Quizzle/
+ 
+ ## Preview
+ 
+ <img width="1440" alt="image" src="https://user-images.githubusercontent.com/97048430/157368993-20dd403a-3a1c-4dfd-a377-91e2d7b6c18f.png">
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/97048430/157369046-e1f1d28d-5c8d-4c1d-a02a-13ef0ee951ee.png">
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/97048430/157369089-b854299f-eac4-4688-82b4-5716ee184570.png">
 
 
 ## Contribution
